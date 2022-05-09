@@ -14,7 +14,7 @@ export default () => (
 			84184 Tiefenbach
 			<br />
 			<br />
-			<b>Telefon:</b> +49 0871 123456789
+			<b>Telefon:</b> +49 0871 96685640
 			<br />
 			<b>E-Mail:</b> mail@la-regionalbau.de
 			<br />
@@ -34,11 +34,14 @@ export default () => (
 			<b>Abgabenordnung:</b> ...
 			<br />
 			<br />
-			<b>Haftungshinweis:</b> Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die
-			Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber
-			verantwortlich. Das Gleiche gilt für Informationen auf unserer Homepage. Inzwischen könnten sich die Daten
-			verändert haben. Eine Haftung oder Garantie für die Aktualität, Richtigkeit und Vollständigkeit der zur
-			Verfügung gestellten Informationen kann daher nicht übernommen werden.
+			<b>Haftungshinweis:</b> Trotz sorgfältiger inhaltlicher Kontrolle
+			übernehmen wir keine Haftung für die Inhalte externer Links. Für den
+			Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber
+			verantwortlich. Das Gleiche gilt für Informationen auf unserer
+			Homepage. Inzwischen könnten sich die Daten verändert haben. Eine
+			Haftung oder Garantie für die Aktualität, Richtigkeit und
+			Vollständigkeit der zur Verfügung gestellten Informationen kann
+			daher nicht übernommen werden.
 		</p>
 	</Layout>
 );

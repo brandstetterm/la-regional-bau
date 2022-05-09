@@ -1,27 +1,26 @@
 import React from 'react';
-import logo from '../assets/logo.png';
+import { Navbar } from './Navbar';
 import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
+import '../styles.css';
 
 export const Layout: React.FC = (props) => (
-	<div className="flex flex-col h-screen">
-		<header className="flex flex-row m-4 gap-8">
-			<img src={logo} alt="Logo" className="h-16" />
-			<nav className="flex-1 flex gap-4 justify-end items-end">
-				<Link to="/" className="text-secondary font-bold">
-					Startseite
-				</Link>
-				<Link to="/ueber-mich" className="text-secondary font-bold">
-					Über mich
-				</Link>
-				<Link to="/leistungen" className="text-secondary font-bold">
-					Leistungen
-				</Link>
-				<Link to="/kontakt" className="text-secondary font-bold">
-					Kontakt
-				</Link>
-			</nav>
+	<div className="h-screen">
+		<Helmet>
+			<meta charSet="utf-8" />
+			<title>LA regional Bau</title>
+			<link rel="icon" type="image/png" href="../assets/favicon.ico" />
+		</Helmet>
+		<header className="shadow-md fixed top-0 left-0 right-0 bg-white z-20">
+			<Navbar />
 		</header>
-		<main className="flex-1 m-10">{props.children}</main>
-		<footer className="h-32 bg-secondary"></footer>
+		<main className="flex-1 p-5 pt-24 sm:p-10 sm:pt-24 min-h-full box-border max-w-3xl m-auto">
+			{props.children}
+		</main>
+		<footer className="block w-full h-8 bg-secondary text-white flex justify-center gap-8">
+			<Link to="/kontakt">Kontakt</Link>
+			<Link to="/datenschutz">Datenschutz</Link>
+			<Link to="/impressum">Impressum</Link>
+		</footer>
 	</div>
 );
